@@ -9,7 +9,7 @@ function rollDice() {
     for (let i = 0; i < numberOfDice; i++) {
       const value = Math.floor(Math.random() * 6) + 1;
       values.push(value);
-      images.push(`<img src="DiceImages/${value}.png" alt="Dice ${value}" class="dice">`);
+      images.push(`<img src="../" + "${value}.png" alt="Dice ${value}" class="dice">`);
     }
   
     diceResult.textContent = `You rolled: ${values.join(', ')}`;
